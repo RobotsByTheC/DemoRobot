@@ -1,0 +1,15 @@
+# ignore file backups
+*~
+*.bak.xml
+
+# ignore license
+BSD_License_for_WPILib_code.txt
+
+# ignore build and generated files
+/bin/
+/build/
+/doc/
+/dist/
+
+# ignore netbeans files
+/nbproject/private/
