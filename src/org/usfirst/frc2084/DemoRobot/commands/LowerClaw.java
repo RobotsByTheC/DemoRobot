@@ -8,6 +8,7 @@ package org.usfirst.frc2084.DemoRobot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc2084.DemoRobot.Robot;
+import org.usfirst.frc2084.DemoRobot.subsystems.ClawSubsystem;
 
 /**
  *
@@ -24,6 +25,7 @@ public class LowerClaw extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+        Robot.clawSubsystem.setLiftState(ClawSubsystem.LiftState.LOWERED);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -32,7 +34,7 @@ public class LowerClaw extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     // Called once after isFinished returns true
